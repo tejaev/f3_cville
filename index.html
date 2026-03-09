@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="F3 Charlottesville is a free men's workout group built around Fitness, Fellowship, and Faith."
+    />
+    <title>F3 Charlottesville | Fitness, Fellowship, Faith</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="F3 Charlottesville home">
+          <span class="brand-mark">
+            <img src="./raven.png" alt="" />
+          </span>
+          <span class="brand-copy">
+            <strong>F3 Charlottesville</strong>
+            <span>Fitness, Fellowship, Faith</span>
+          </span>
+        </a>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="siteNav"
+        >
+          Menu
+        </button>
+        <nav id="siteNav" class="site-nav" aria-label="Primary">
+          <a href="#schedule">Schedule</a>
+          <a href="./about.html">What Is F3</a>
+          <a href="#new-guys">New Guys</a>
+          <a href="./lexicon.html">Lexicon</a>
+          <a href="#leadership">Q Source</a>
+          <a class="nav-cta" href="#resources">Resources</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero hero-home">
+          <div class="hero-copy">
+            <p class="eyebrow">F3 Charlottesville</p>
+            <h1 class="hero-title">
+              <span class="hero-line hero-line-wide">Free men&rsquo;s workouts</span>
+              <span class="hero-line">before the sun is <span>up.</span></span>
+            </h1>
+            <p class="hero-lede">
+              We meet in parks, parking lots, and trails across C&rsquo;ville
+              to get fit, build community, and chase something bigger than
+              ourselves. No fees. No contracts. No mirrors.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#schedule">See Workout Schedule</a>
+              <a class="button button-secondary" href="#new-guys">I&rsquo;m New Here</a>
+            </div>
+            <ul class="hero-stats" aria-label="Quick facts">
+              <li>
+                <strong>20+</strong>
+                <span>weekly workouts</span>
+              </li>
+              <li>
+                <strong>6</strong>
+                <span>days a week</span>
+              </li>
+              <li>
+                <strong>100%</strong>
+                <span>free to join</span>
+              </li>
+            </ul>
+          </div>
+          <aside class="hero-panel" aria-label="F3 principles">
+            <p class="panel-kicker">The Three Fs</p>
+            <div class="panel-grid">
+              <article>
+                <span>01</span>
+                <h2>Fitness</h2>
+                <p>Peer-led, outdoor workouts open to men of every fitness level.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h2>Fellowship</h2>
+                <p>Real relationships built through shared effort, laughter, and consistency.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h2>Faith</h2>
+                <p>A chance to pursue purpose together and live for something bigger.</p>
+              </article>
+            </div>
+          </aside>
+        </section>
+
+        <div class="photo-stack photo-stack-workout">
+          <section class="mission-strip section-photo-card section-photo-top">
+            <div>
+              <p class="section-label">Why F3 Works</p>
+              <h2>We leave men better than we found them.</h2>
+            </div>
+            <div class="principles">
+              <article>
+                <h3>Always Free</h3>
+                <p>We don&rsquo;t have a membership fee. And we never will.</p>
+              </article>
+              <article>
+                <h3>Always Outdoors</h3>
+                <p>Rain or shine. Because comfort is not the goal.</p>
+              </article>
+            <article>
+              <h3>Open To All Men</h3>
+              <p>Every workout is open to all men, regardless of background or fitness level.</p>
+            </article>
+            <article>
+              <h3>Peer Led</h3>
+              <p>The workout is led by men like you from the group, not paid instructors.</p>
+            </article>
+              <article>
+                <h3>Circle Of Trust</h3>
+                <p>We close in a Circle of Trust to share announcements, prayer, and support.</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="schedule" class="section-block section-photo-card section-photo-bottom">
+            <div class="section-heading">
+              <div>
+                <p class="section-label">Weekly Schedule</p>
+                <h2>Find a workout that fits your morning.</h2>
+              </div>
+              <p>
+                Most workouts start before 6:00 AM and wrap in 45 to 60 minutes. Choose a day
+                below to narrow the list or leave it on all posts.
+              </p>
+            </div>
+            <div id="scheduleFilters" class="filter-row" aria-label="Workout days"></div>
+            <div id="scheduleGrid" class="schedule-grid" aria-live="polite"></div>
+          </section>
+        </div>
+
+        <section class="section-block band">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Fellowship</p>
+              <h2>Connection matters as much as cadence.</h2>
+            </div>
+            <p>
+              F3 Charlottesville includes weekday coffees, happy hours, lunches, dinners,
+              trail runs, volunteer events, and conversations that keep going long after the
+              workout ends.
+            </p>
+          </div>
+          <div class="three-up">
+            <article class="feature-card">
+              <h3>Free Coffee</h3>
+              <p>Stick around after a workout and enjoy coffee and banter.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Shared Effort</h3>
+              <p>The hard thing is easier when someone is with you the whole way.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Leadership Growth</h3>
+              <p>Men are challenged to lead workouts, conversations, and service in the city.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-block split-layout reverse">
+          <div class="stack">
+            <p class="section-label">Serving The Community</p>
+            <h2>We train for more than ourselves.</h2>
+            <p>
+              F3 Charlottesville regularly shows up for local nonprofits, food drives,
+              neighborhood support, and practical needs inside our own circle. Service is not
+              a side project. It is part of the culture.
+            </p>
+            <p>
+              When a man in the region needs help moving, meals, prayer, manpower, or a push,
+              the expectation is that somebody from the F3 Charlottesville group answers the call.
+            </p>
+          </div>
+          <div class="quote-card impact-card">
+            <p class="impact-kicker">Our 2025 Impact</p>
+            <div class="impact-list">
+              <article class="impact-item">
+                <span class="impact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M5 19h14M7 16V9m5 7V5m5 11v-4" />
+                  </svg>
+                </span>
+                <p>$4,001 &amp; 665 lbs of donations to Emergency Food Network</p>
+              </article>
+              <article class="impact-item">
+                <span class="impact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M12 20s-6-3.9-6-9a3.5 3.5 0 0 1 6-2.2A3.5 3.5 0 0 1 18 11c0 5.1-6 9-6 9Z" />
+                  </svg>
+                </span>
+                <p>$6,720 raised for Piedmont CASA</p>
+              </article>
+              <article class="impact-item">
+                <span class="impact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M4 10h16v10H4zM12 10v10M4 10h16M7 10c0-1.7 1.1-3 2.6-3 1.1 0 1.9.7 2.4 1.7C12.5 7.7 13.3 7 14.4 7 15.9 7 17 8.3 17 10" />
+                  </svg>
+                </span>
+                <p>$1,453 in toys for families in need</p>
+              </article>
+              <article class="impact-item">
+                <span class="impact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M4 7h16M7 7v4m10-4v4M7 11h10M9 11v3c0 1.7 1.3 3 3 3s3-1.3 3-3v-3M7 17h10" />
+                  </svg>
+                </span>
+                <p>$1,000 raised and installed pull-up bars at Charlottesville High School</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="new-guys" class="section-block">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">For New Guys</p>
+              <h2>How to show up for your first post.</h2>
+            </div>
+            <p>
+              You do not need to be in shape, know anybody, or understand the jargon. Just
+              show up a few minutes early, tell a guy it is your first workout, and follow
+              along at your own pace.
+            </p>
+          </div>
+          <div class="steps">
+            <article class="step-card">
+              <span>01</span>
+              <h3>Pick A Workout</h3>
+              <p>Use the schedule on this page and choose a location that fits your morning.</p>
+            </article>
+            <article class="step-card">
+              <span>02</span>
+              <h3>Bring The Basics</h3>
+              <p>Wear workout clothes, bring water, and expect to be outside the full time.</p>
+            </article>
+            <article class="step-card">
+              <span>03</span>
+              <h3>Tell Someone You&rsquo;re New</h3>
+              <p>We call that an FNG, short for Friendly New Guy. Somebody will take it from there.</p>
+            </article>
+            <article class="step-card">
+              <span>04</span>
+              <h3>Stay For COT</h3>
+              <p>The Circle of Trust closes every workout and helps you get connected quickly.</p>
+            </article>
+          </div>
+          <div class="callout-row">
+            <a
+              class="button button-primary"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScUL0VdNbA3Q34pi_w6Qfp_PkFfyPNjz8a4WP4nMx1pI3I7gA/viewform"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Fill Out This Form After Your First Workout
+            </a>
+            <a
+              class="button button-secondary"
+              href="https://map.f3nation.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              See The F3 Nation Map
+            </a>
+          </div>
+        </section>
+
+        <section id="leadership" class="section-block split-layout">
+          <div class="stack">
+            <p class="section-label">PAX / Q</p>
+            <h2>Leadership gets built one workout at a time.</h2>
+            <p>
+              In F3, the Q is the man leading the workout. Effective leadership starts with
+              preparation, accountability, and bringing energy without making the workout
+              about yourself.
+            </p>
+            <ul class="checklist">
+              <li>Start and finish on time. No exceptions.</li>
+              <li>Plan the workout, then scale it for every fitness level.</li>
+              <li>Demonstrate movements clearly and keep the group moving.</li>
+              <li>Protect the culture: welcome new guys, encourage guys lagging behind, and close in COT.</li>
+            </ul>
+          </div>
+          <div class="leadership-panel">
+            <h3>Q Tools</h3>
+            <a
+              class="resource-link"
+              href="https://calendar.google.com/calendar/u/0?cid=ZDkyYWVkNWM4NjJjZWQzOTFhM2ZiNGZjYjcxNmNjMjczODUzMmFlNzY4MzkzZGQwN2M3NjU1ZjQ0YTUxYTg2M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open the Q Calendar
+            </a>
+            <a class="resource-link" href="#schedule">Review current AOs and times</a>
+            <a class="resource-link" href="./lexicon.html">Brush up on terms and cadence</a>
+          </div>
+        </section>
+
+        <section id="resources" class="section-block resources">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">Resources</p>
+              <h2>Everything you need to plug in.</h2>
+            </div>
+            <p>Useful links from the current F3 Charlottesville site and the broader F3 network.</p>
+          </div>
+          <div class="resource-grid">
+            <a
+              class="resource-card"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScUL0VdNbA3Q34pi_w6Qfp_PkFfyPNjz8a4WP4nMx1pI3I7gA/viewform"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Friendly New Guy Form</span>
+              <strong>Register after your first post</strong>
+            </a>
+            <a
+              class="resource-card"
+              href="https://calendar.google.com/calendar/u/0?cid=ZDkyYWVkNWM4NjJjZWQzOTFhM2ZiNGZjYjcxNmNjMjczODUzMmFlNzY4MzkzZGQwN2M3NjU1ZjQ0YTUxYTg2M0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>Q Calendar</span>
+              <strong>Claim a workout and lead it well</strong>
+            </a>
+            <a
+              class="resource-card"
+              href="https://lookerstudio.google.com/u/0/reporting/144c6035-3ef7-49bd-a758-a85b91f8f442/page/5IA4B"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>AO Stats</span>
+              <strong>See attendance and site activity</strong>
+            </a>
+            <a
+              class="resource-card"
+              href="https://f3near.me"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span>F3 Near Me</span>
+              <strong>Find neighboring regions and travel posts</strong>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div>
+          <p class="footer-brand">F3 Charlottesville</p>
+          <p>
+            Free workouts for men across Charlottesville, Albemarle, Crozet, and Ruckersville.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#schedule">Schedule</a>
+          <a href="#new-guys">Start Here</a>
+          <a href="#leadership">Q Source</a>
+          <a href="https://map.f3nation.com" target="_blank" rel="noreferrer">F3 Nation Map</a>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
