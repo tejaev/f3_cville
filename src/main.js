@@ -230,7 +230,7 @@ const glossary = [
   },
   {
     category: "Workout Terms",
-    term: "Slaughter Starter",
+    term: "EC",
     definition:
       "Optional extra work before the official start time for men who want to get after it early.",
   },
