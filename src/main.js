@@ -25,7 +25,7 @@ const workouts = [
     time: "5:30 AM",
     ao: "Westside",
     style: "Bootcamp",
-    location: "Ivy Elementary",
+    location: "Virginia L. Murray Elementary",
   },
   {
     day: "Tuesday",
@@ -46,7 +46,7 @@ const workouts = [
     time: "6:00 AM",
     ao: "Thunderdome",
     style: "Bootcamp",
-    location: "UVA",
+    location: "The Rotunda",
   },
   {
     day: "Wednesday",
@@ -162,6 +162,35 @@ const workouts = [
     location: "The Bridge",
   },
 ];
+
+const locationLinks = {
+  "McIntire Skate Park":
+    "https://www.google.com/maps/dir/Skate+Park+Parking+Lot/38.0454722,-78.4770833/@38.0461274,-78.4790955,17z/data=!3m1!4b1!4m9!4m8!1m5!1m1!1s0x89b387536a6b1fc1:0xc37e1262438e9ccd!2m2!1d-78.4779845!2d38.047042!1m0!3e2?entry=ttu&g_ep=EgoyMDI0MTAyMC4wIKXMDSoASAFQAw%3D%3D",
+  "Ting Pavilion":
+    "https://www.google.com/maps/place/Ting+Pavilion/@38.0292483,-78.4792507,17z/data=!3m1!4b1!4m6!3m5!1s0x89b386271b91c5bd:0x5a57b8a69f550594!8m2!3d38.0292483!4d-78.4766758!16s%2Fg%2F11b63fdztf?entry=tts&shorturl=1",
+  "Hollymeade Elementary":
+    "https://www.google.com/maps/place/Hollymead+Elementary+School/@38.1123927,-78.4419,17z/data=!3m1!4b1!4m6!3m5!1s0x89b477ae299786ef:0xc87e607eca4b5979!8m2!3d38.1123927!4d-78.4393251!16s%2Fm%2F0761kd1?entry=tts&shorturl=1",
+  "Charlottesville High School Track":
+    "https://www.google.com/maps/search/38.053023,+-78.477560?entry=tts&shorturl=1",
+  "The Rotunda":
+    "https://www.google.com/maps/place/The+Rotunda/@38.0355514,-78.5060009,17z/data=!3m1!4b1!4m6!3m5!1s0x89b38645c3e1a2f7:0x7c424e84bcb81680!8m2!3d38.0355514!4d-78.503426!16zL20vMDM3NnJz?entry=tts&shorturl=1",
+  "Henley Middle School":
+    "https://www.google.com/maps/place/Henley+Middle+School/@38.0522233,-78.7083119,651m/data=!3m2!1e3!4b1!4m6!3m5!1s0x89b37ee3b044c157:0x1ae308633ca9432b!8m2!3d38.0522191!4d-78.705737!16s%2Fm%2F0761kd9?entry=tts&g_ep=EgoyMDI2MDIxMS4wIPu8ASoASAFQAw%3D%3D&skid=70a47e8a-3180-4eaa-8d17-ea3de4dc7cdf",
+  "Booker T. Washington Park":
+    "https://www.google.com/maps/search/38.041731,+-78.492054?entry=tts&shorturl=1",
+  "PVCC":
+    "https://www.google.com/maps/place/V.+Earl+Dickinson+Theater/@38.0052525,-78.4871154,18z/data=!4m6!3m5!1s0x89b38608f5f00001:0x18203478da2441fb!8m2!3d38.0053931!4d-78.4882095!16s%2Fg%2F11c52ynzj9?entry=tts&g_ep=EgoyMDI1MDMyNC4wIPu8ASoASAFQAw%3D%3D&skid=a4758395-f606-4fa2-8369-61aa13b6c675",
+  "Ivy Elementary":
+    "https://www.google.com/maps/place/Ivy+Elementary+School/@38.0812482,-78.6029415,17z/data=!3m1!4b1!4m6!3m5!1s0x89b380922bf81631:0x17b0801218a6b382!8m2!3d38.0812441!4d-78.5980706!16s%2Fm%2F076f1kh?entry=tts",
+  "Ivy Elementary School":
+    "https://www.google.com/maps/place/Ivy+Elementary+School/@38.0812482,-78.6029415,17z/data=!3m1!4b1!4m6!3m5!1s0x89b380922bf81631:0x17b0801218a6b382!8m2!3d38.0812441!4d-78.5980706!16s%2Fm%2F076f1kh?entry=tts",
+  "Darden Towe":
+    "https://www.google.com/maps/place/Darden+Towe+Park/@38.0422311,-78.4536407,16.97z/data=!4m6!3m5!1s0x89b3885f0771c4ed:0xbe8b7cceaa752287!8m2!3d38.0422139!4d-78.451038!16s%2Fg%2F1tgk1j6t?entry=tts&shorturl=1",
+  "The Bridge":
+    "https://www.google.com/maps/place/Bridge+Ministry/@37.0894801,-80.1422525,8.3z/data=!4m7!3m6!1s0x89b3a94b88a6ea8f:0x4d37776cf64de2b1!8m2!3d37.5136037!4d-78.5628912!15sChVUSGUgQnJpZGdlIG1pbmlzdHJpZXNaFyIVdGhlIGJyaWRnZSBtaW5pc3RyaWVzkgEaYWRkaWN0aW9uX3RyZWF0bWVudF9jZW50ZXKaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVUXROVXhtYlVWUkVBReABAA!16s%2Fg%2F1tf5fmql?entry=tts&shorturl=1",
+  "Virginia L. Murray Elementary":
+    "https://www.google.com/maps/place/Virginia+L.+Murray+Elementary+School/@38.058077,-78.6151385,17z/data=!3m1!4b1!4m6!3m5!1s0x89b38055339f6ab9:0xd153bcdfe70abebe!8m2!3d38.058077!4d-78.6125636!16s%2Fm%2F076bfxb?client=safari&sca_esv=558180114&rls=en&output=search&q=murray+elementary+school&source=lnms&sa=X&ved=2ahUKEwjH5vfaiOeAAxXSNlkFHephBhwQ0pQJegQIDBAB&entry=tts&shorturl=1",
+};
 
 const glossary = [
   {
@@ -325,6 +354,15 @@ let activeDay = "";
 
 function createCardMarkup(workout) {
   const noteMarkup = workout.note ? `<p>${workout.note}</p>` : "";
+  const mapLink = locationLinks[workout.location];
+  const locationMarkup = mapLink
+    ? `
+      <p class="location">
+        ${workout.location}
+        <a href="${mapLink}" target="_blank" rel="noreferrer">See map</a>
+      </p>
+    `
+    : `<p class="location">${workout.location}</p>`;
 
   return `
     <article class="schedule-card">
@@ -334,7 +372,7 @@ function createCardMarkup(workout) {
       </div>
       <h3>${workout.ao}</h3>
       <p>${workout.style}</p>
-      <p class="location">${workout.location}</p>
+      ${locationMarkup}
       ${noteMarkup}
     </article>
   `;

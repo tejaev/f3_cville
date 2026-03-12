@@ -810,6 +810,23 @@ h1 {
 .schedule-card .location {
   color: var(--text);
   font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.schedule-card .location a {
+  color: var(--accent-bright);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+}
+
+.schedule-card .location a:hover,
+.schedule-card .location a:focus-visible {
+  color: var(--text);
 }
 
 .search-field input {
