@@ -324,6 +324,8 @@ const days = ["All", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Sa
 let activeDay = "";
 
 function createCardMarkup(workout) {
+  const noteMarkup = workout.note ? `<p>${workout.note}</p>` : "";
+
   return `
     <article class="schedule-card">
       <div class="schedule-meta">
@@ -333,7 +335,7 @@ function createCardMarkup(workout) {
       <h3>${workout.ao}</h3>
       <p>${workout.style}</p>
       <p class="location">${workout.location}</p>
-      <p>${workout.note}</p>
+      ${noteMarkup}
     </article>
   `;
 }
