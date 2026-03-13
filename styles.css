@@ -1018,12 +1018,25 @@ h1 {
   }
 
   .hero {
-    padding-top: 28px;
+    gap: 20px;
+    padding-top: 24px;
   }
 
   h1 {
     max-width: 100%;
     font-size: clamp(2.8rem, 14vw, 4.4rem);
+  }
+
+  .hero-copy {
+    gap: 12px;
+  }
+
+  .eyebrow,
+  .hero-title,
+  .hero-lede,
+  .hero-actions,
+  .hero-stats {
+    transform: none;
   }
 
   .hero-title {
@@ -1033,6 +1046,32 @@ h1 {
 
   .hero-line-wide {
     white-space: normal;
+  }
+
+  .hero-lede {
+    margin-top: 2px;
+  }
+
+  .hero-actions {
+    margin-top: 8px;
+  }
+
+  .hero-stats {
+    margin-top: 12px;
+  }
+
+  .hero-panel {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .panel-grid {
+    gap: 12px;
+  }
+
+  .hero-panel article {
+    gap: 12px;
+    padding: 16px;
   }
 
   .hero-stats,
