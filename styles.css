@@ -843,6 +843,70 @@ h1 {
   gap: 24px;
 }
 
+.error-hero {
+  grid-template-columns: minmax(0, 1.18fr) minmax(280px, 0.82fr);
+}
+
+.error-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(9, 12, 18, 0.88) 0%, rgba(9, 12, 18, 0.7) 48%, rgba(9, 12, 18, 0.84) 100%),
+    linear-gradient(180deg, rgba(13, 15, 18, 0.06), rgba(13, 15, 18, 0.42)),
+    url("./workout.JPG");
+  background-position: center 62%;
+  background-size: cover;
+  opacity: 0.72;
+  filter: saturate(0.88) contrast(0.92);
+  z-index: 0;
+}
+
+.error-title,
+.error-lede {
+  transform: none;
+}
+
+.error-panel {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  min-height: 100%;
+  padding: 28px;
+}
+
+.error-code {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: clamp(4.4rem, 12vw, 8rem);
+  line-height: 0.85;
+  color: var(--text);
+  letter-spacing: 0.06em;
+}
+
+.error-note {
+  margin: 0;
+  color: rgba(244, 241, 232, 0.82);
+}
+
+.error-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.error-link-card {
+  min-height: 190px;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.error-link-card:hover,
+.error-link-card:focus-visible {
+  border-color: rgba(245, 157, 82, 0.36);
+  background:
+    linear-gradient(180deg, rgba(245, 157, 82, 0.1), transparent),
+    var(--panel);
+}
+
 .glossary-section {
   display: grid;
   gap: 14px;
@@ -970,6 +1034,7 @@ h1 {
   .three-up,
   .steps,
   .resource-grid,
+  .error-grid,
   .schedule-grid,
   .glossary-term-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1079,6 +1144,7 @@ h1 {
   .three-up,
   .steps,
   .resource-grid,
+  .error-grid,
   .schedule-grid,
   .glossary-term-grid {
     grid-template-columns: 1fr;
