@@ -25,7 +25,7 @@ const workouts = [
     time: "5:30 AM",
     ao: "Westside",
     style: "Bootcamp",
-    location: "Virginia L. Murray Elementary",
+    location: "Ivy Elementary",
   },
   {
     day: "Tuesday",
